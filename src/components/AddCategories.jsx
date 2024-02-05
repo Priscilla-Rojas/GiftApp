@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 
-export const AddCategories = () => {
+export const AddCategories = ({ setCategories }) => {
 
   const [inputValue, setimputValue] = useState('')
 
@@ -11,9 +11,12 @@ export const AddCategories = () => {
   }
   const onSubmit = (event) => {
     event.preventDefault();
+    setCategories( categories => [ inputValue, ...categories]);
     console.log(inputValue);
   }
 
+
+  
   return (
     <form onSubmit={ onSubmit }>
       <input type="text" placeholder="Buscar Gift" value={inputValue} onChange={ onInputChange }/>
