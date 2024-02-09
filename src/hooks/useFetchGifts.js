@@ -16,7 +16,7 @@ export const useFetchGifts = (category) => {
 
   useEffect( ()=>{
     getImages()
-  }, [])
+  }, [])  
 
   return{
     images,

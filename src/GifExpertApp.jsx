@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import { AddCategories } from './components/AddCategories';
-import { GiftGrid } from './components/GiftGrid';
-
+import { AddCategories, GiftGrid } from './components';
+  
 
 export const GifExpertApp = () => {
 
@@ -12,7 +11,7 @@ export const GifExpertApp = () => {
     
     const repeat = categories.find(element=> element.toLowerCase() === newCategory.toLowerCase());
     if(repeat){
-      alert('this element exist');
+      alert('this element alredy exists');
       return;
     }
     // if(categories.includes(newCategory)) return;
