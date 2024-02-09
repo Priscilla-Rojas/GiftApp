@@ -4,9 +4,8 @@ import { AddCategories, GiftGrid } from './components';
 
 export const GifExpertApp = () => {
 
-  const [categories, setCategories] = useState(['One Punch']);
+  const [categories, setCategories] = useState(['Lo  más buscado']);
 
-  // eslint-disable-next-line no-unused-vars
   const onAddCategory = (newCategory) =>{
     
     const repeat = categories.find(element=> element.toLowerCase() === newCategory.toLowerCase());
@@ -14,7 +13,6 @@ export const GifExpertApp = () => {
       alert('this element alredy exists');
       return;
     }
-    // if(categories.includes(newCategory)) return;
 
     setCategories([newCategory, ...categories]);
   }

@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import style from "../styles/AddCategories.module.css"
 import { useState } from 'react';
 
 
@@ -18,7 +18,7 @@ export const AddCategories = ({ onNewCategory }) => {
   }
   
   return (
-    <form onSubmit={ onSubmit }>
+    <form onSubmit={ onSubmit } className= {style.form}>
       <input type="text" placeholder="Buscar Gift" value={inputValue} onChange={ onInputChange }/>
     </form>
   )
