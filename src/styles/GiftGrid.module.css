@@ -1,0 +1,37 @@
+.header{
+  width: 100%;
+  background-color: #eec3a4;
+  padding: 10px 20px ;
+  margin-bottom: 10px;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.grid{
+  width: 98%;
+  margin: 10px auto;
+  border-radius: 10px;
+  background-color: #ecc8af;
+  padding: 0 0 15px ;
+  overflow: hidden;
+}
+.cards{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: baseline;
+  background-color: transparent;
+}
+.title{
+  width: max-content;
+  color: #355c7d;
+  /* margin: 20px auto; */
+  font-size: 2.5rem;
+  /* padding-left: 5%; */
+  background-color: transparent;
+  margin: 0;
+}
