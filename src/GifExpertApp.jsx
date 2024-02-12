@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { AddCategories, GiftGrid } from './components';
+import { AddCategories, Footer, GiftGrid } from './components';
 import style from './styles/GifExpertApp.module.css'
 
 export const GifExpertApp = () => {
 
-  const [categories, setCategories] = useState(['Lo  más buscado']);
+  const [categories, setCategories] = useState(['Trends']);
   
   const onAddCategory = (newCategory) =>{
     const repeat = categories.find(element=> element.toLowerCase() === newCategory.toLowerCase());
@@ -17,16 +17,14 @@ export const GifExpertApp = () => {
   }
   const onDeleteCategory = ( category ) => {
     if(categories.length == 1){
-      if(confirm('¿Deseas Eliminar todos los Gift?')){
+      if(confirm('Warning! You are about to delete all gifs.')){
         setCategories([]);
-        // localStorage.setItem('categories', JSON.stringify(categories));
       }else{
         return;
       }
     }
     const newArray = categories.filter( element => element !== category);
     setCategories([...newArray]);
-    // localStorage.setItem('categories', JSON.stringify(categories));
   }
 
   return (
@@ -44,6 +42,7 @@ export const GifExpertApp = () => {
         <GiftGrid key={category} category= {category} onDeleteCategory={ onDeleteCategory }/>
         ))
     }
+    <Footer/>
     </>
   )
 }

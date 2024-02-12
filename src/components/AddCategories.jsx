@@ -19,7 +19,7 @@ export const AddCategories = ({ onNewCategory }) => {
   
   return (
     <form onSubmit={ onSubmit } className= {style.form}>
-      <input type="text" placeholder="Buscar Gift" value={inputValue} onChange={ onInputChange }/>
+      <input type="text" placeholder="Search gif" value={inputValue} onChange={ onInputChange }/>
     </form>
   )
 }
