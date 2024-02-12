@@ -16,7 +16,7 @@ export const GiftGrid = ({ category, onDeleteCategory}) => {
         <DeleteCategory onDeleteCategory={ onDeleteCategory } category= { category }/>
       </section>
       {
-        isLoading && ( <h2> cargando...</h2>) 
+        isLoading && ( <h2 className={ style.loading}> Loading...</h2>) 
       }
       <div className={ style.cards}>
       {images.map( ( image )=>(

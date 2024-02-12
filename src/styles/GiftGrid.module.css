@@ -11,8 +11,8 @@
 
 }
 .grid{
-  width: 98%;
-  margin: 10px auto;
+  width: 99%;
+  margin: 5px auto;
   border-radius: 10px;
   background-color: #ecc8af;
   padding: 0 0 15px ;
@@ -34,4 +34,10 @@
   /* padding-left: 5%; */
   background-color: transparent;
   margin: 0;
+}
+.loading{
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  font-size: 2rem ;
 }
