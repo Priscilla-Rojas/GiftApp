@@ -3,4 +3,4 @@
 Esta aplicacion fue creada utilizando React + Vite
 Consumiendo la Api de https://giphy.com/
 
-Desplegada en [GitHub/](https://priscilla-rojas.github.io/GiftApp/)
+Desplegada en [GitHub/priscilla-rojas](https://priscilla-rojas.github.io/GiftApp/ target:_black)
