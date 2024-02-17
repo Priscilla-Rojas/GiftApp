@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el Componente GigtItem Debe coincidir con el snapshop 1`] = `
+<div>
+  <div>
+    <img
+      alt="Saitama"
+      src="https://one-pounch.com/saitama.jpg"
+    />
+    <p>
+      Saitama
+    </p>
+  </div>
+</div>
+`;
