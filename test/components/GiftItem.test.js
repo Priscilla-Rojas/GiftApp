@@ -14,7 +14,7 @@ describe('Pruebas en el Componente GigtItem', () => {
   })
   test('Debe mostrar la imagen con el url y el alt indicado', () => { 
     render( <GiftItem title={title} url={url}/>);
-    screen.debug();
+    // screen.debug();
     const { src, alt} = screen.getByRole( 'img');
     expect( src ).toBe( url);
     expect( alt ).toBe( alt);
