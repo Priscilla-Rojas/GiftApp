@@ -15,9 +15,7 @@ export const AddCategories = ({ onNewCategory }) => {
     setimputValue('');
   }
   return (
-    <form 
-      onSubmit={ onSubmit } 
-      className= {style.form}>
+    <form onSubmit={ onSubmit } className= {style.form} aria-label="form">
         <input 
           type="text" 
           placeholder="Search gif" 
