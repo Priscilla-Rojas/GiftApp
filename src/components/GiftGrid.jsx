@@ -1,8 +1,10 @@
+import PropTypes from "prop-types"
 import { GiftItem } from "./GiftItem";
 import { useFetchGifts } from "../hooks/useFetchGifts";
 import { DeleteCategory } from "./DeleteCategory";
 
 import style from "../styles/GiftGrid.module.css"
+
 
 
 export const GiftGrid = ({ category, onDeleteCategory}) => {
@@ -26,4 +28,9 @@ export const GiftGrid = ({ category, onDeleteCategory}) => {
     </div>
     
   )
+}
+
+GiftGrid.propTypes={
+  category: PropTypes.string.isRequired,
+  onDeleteCategory: PropTypes.func.isRequired,
 }
