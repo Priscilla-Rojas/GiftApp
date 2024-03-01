@@ -7,7 +7,6 @@ jest.mock( '../../src/hooks/useFetchGifts' );
 
 
 describe('Pruevas en GiftGrid', () => {
-
   const category = 'Mariposa';
 
   test('Debe mostar el Loading..', () => { 
@@ -21,11 +20,9 @@ describe('Pruevas en GiftGrid', () => {
     expect( screen.getByText( 'Loading...'))
     expect( screen.getByText( category ));
 
-    screen.debug()
   })
 
   test('Debe mostrar items cuando se cargan imagenes por medio del useFetchGift', () => {
-
     const gifs = [
       {
         id: 'ABC',
@@ -36,23 +33,16 @@ describe('Pruevas en GiftGrid', () => {
         id: 'DEF',
         title: 'Mapa',
         url: 'https://localhost/mapa.jpg'
-      },
-      {
-        id: 'GHI',
-        title: 'Goku',
-        url: 'https://localhost/goku.jpg'
-      },
-      {
-        id: 'JKL',
-        title: 'Jungla',
-        url: 'https://localhost/jungla.jpg'
-      },
+      }
     ]
-
     useFetchGifts.mockReturnValue({
-      images: [gifs],
+      images: gifs,
       isLoading: false,
     })
+
+    render( <GiftGrid category={ category }/>)
+    expect( screen.getAllByRole('img').length ).toBe(2)
+    screen.debug()
   })
 
 })
