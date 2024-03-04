@@ -42,7 +42,7 @@ describe('Pruevas en GiftGrid', () => {
 
     render( <GiftGrid category={ category }/>)
     expect( screen.getAllByRole('img').length ).toBe(2)
-    screen.debug()
+    // screen.debug()
   })
 
 })

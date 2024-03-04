@@ -9,7 +9,7 @@ export const GifExpertApp = () => {
   const onAddCategory = (newCategory) =>{
     const repeat = categories.find(element=> element.toLowerCase() === newCategory.toLowerCase());
     if(repeat){
-      alert('this element alredy exists');
+      console.log('this element alredy exists');
       return;
     }
     setCategories([newCategory, ...categories]);

@@ -17,9 +17,6 @@ describe('Pruebas en useFetchGifts', () => {
     
     await waitFor(
       ()=> expect( result.current.images.length ).toBeGreaterThan(0),
-      {
-        timeout: 6000
-      }
     );
 
     const { images, isLoading } = result.current;
